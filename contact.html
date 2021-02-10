@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US| Pipsmaker FX</title>
+    <link rel="stylesheet" href="contactmain.css">
+    <link rel="preconnect" href="https://font  s.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Contact Us</h2>
+                <form method="post" action="{{url_for('send_message')}}">
+                    <input type="text" name="name" class="field" placeholder="Your Name" required id>
+                    <input type="email" name="email" class="field" placeholder="Your Email" required id>
+                    <input type="contact" name="contact" class="field" placeholder="Mobile Number" required id>
+                    <textarea name="message" class="field" placeholder="Message" required></textarea>
+                    <input type="submit" name="submit" class="btn" value="SEND">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
